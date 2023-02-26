@@ -13,7 +13,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <AccessText Name="accessText" Text="100" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="40" Margin="0,0,20,0"/>
+        <AccessText Name="accessText" Text="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="50" Margin="0,0,20,0"/>
         <!--All buttons layout-->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -31,29 +31,29 @@
             </Grid.ColumnDefinitions>
 
             <!--Grupped by columns-->
-            <Button Content="%" Grid.Row="0" FontSize="40" Click="divisionRest_Click"/>
-            <Button Content="7" Grid.Row="1" FontSize="40" Click="Button7"/>
-            <Button Content="4" Grid.Row="2" FontSize="40" Click="Button4"/>
-            <Button Content="1" Grid.Row="3" FontSize="40" Click="Button1"/>
-            <Button Content="+/-" Grid.Row="4" FontSize="40"/>
+            <Button Content="%" Grid.Row="0" FontSize="40" Click="ButtonPercentage"/>
+            <Button Content="7" Grid.Row="1" FontSize="40" Name="Button7" Click="Button1to9"/>
+            <Button Content="4" Grid.Row="2" FontSize="40" Name="Button4" Click="Button1to9"/>
+            <Button Content="1" Grid.Row="3" FontSize="40" Name="Button1" Click="Button1to9"/>
+            <Button Content="+/-" Grid.Row="4" FontSize="40" Click="ButtonMinusChange"/>
 
-            <Button Content="CE" Grid.Row="0" Grid.Column="1" FontSize="35"/>
-            <Button Content="8" Grid.Row="1" Grid.Column="1" FontSize="40" Click="Button8"/>
-            <Button Content="5" Grid.Row="2" Grid.Column="1" FontSize="40" Click="Button5"/>
-            <Button Content="2" Grid.Row="3" Grid.Column="1" FontSize="40" Click="Button2"/>
+            <Button Content="CE" Grid.Row="0" Grid.Column="1" FontSize="35" Click="ButtonCE"/>
+            <Button Content="8" Grid.Row="1" Grid.Column="1" FontSize="40" Name="Button8" Click="Button1to9"/>
+            <Button Content="5" Grid.Row="2" Grid.Column="1" FontSize="40" Name="Button5" Click="Button1to9"/>
+            <Button Content="2" Grid.Row="3" Grid.Column="1" FontSize="40" Name="Button2" Click="Button1to9"/>
             <Button Content="0" Grid.Row="4" Grid.Column="1" FontSize="40" Click="Button0"/>
 
-            <Button Content="C" Grid.Row="0" Grid.Column="2" FontSize="35"/>
-            <Button Content="9" Grid.Row="1" Grid.Column="2" FontSize="40" Click="Button9"/>
-            <Button Content="6" Grid.Row="2" Grid.Column="2" FontSize="40" Click="Button6"/>
-            <Button Content="3" Grid.Row="3" Grid.Column="2" FontSize="40" Click="Button3"/>
-            <Button Content="." Grid.Row="4" Grid.Column="2" FontSize="40"/>
+            <Button Content="C" Grid.Row="0" Grid.Column="2" FontSize="35" Click="ButtonC"/>
+            <Button Content="9" Grid.Row="1" Grid.Column="2" FontSize="40" Name="Button9" Click="Button1to9"/>
+            <Button Content="6" Grid.Row="2" Grid.Column="2" FontSize="40" Name="Button6" Click="Button1to9"/>
+            <Button Content="3" Grid.Row="3" Grid.Column="2" FontSize="40" Name="Button3" Click="Button1to9"/>
+            <Button Content="," Grid.Row="4" Grid.Column="2" FontSize="40" Click="ButtonComa"/>
 
-            <Button Content=":" Grid.Row="0" Grid.Column="3" FontSize="40"/>
-            <Button Content="X" Grid.Row="1" Grid.Column="3" FontSize="30"/>
-            <Button Content="-" Grid.Row="2" Grid.Column="3" FontSize="50"/>
-            <Button Content="+" Grid.Row="3" Grid.Column="3" FontSize="40"/>
-            <Button Content="=" Grid.Row="4" Grid.Column="3" FontSize="40"/>
+            <Button Content=":" Grid.Row="0" Grid.Column="3" FontSize="40" Click="ButtonDivision"/>
+            <Button Content="X" Grid.Row="1" Grid.Column="3" FontSize="30" Click="ButtonMultiply"/>
+            <Button Content="-" Grid.Row="2" Grid.Column="3" FontSize="50" Click="ButtonMinus"/>
+            <Button Content="+" Grid.Row="3" Grid.Column="3" FontSize="40" Click="ButtonPlus"/>
+            <Button Content="=" Grid.Row="4" Grid.Column="3" FontSize="40" Click="ButtonEquals"/>
 
         </Grid>
     </Grid>
